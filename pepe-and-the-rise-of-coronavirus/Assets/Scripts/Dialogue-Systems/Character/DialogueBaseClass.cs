@@ -9,7 +9,7 @@ namespace DialogueSystems
     public class DialogueBaseClass : MonoBehaviour
     {
         public bool finishedLine { get; private set; }
-        protected IEnumerator WriteText(string input, Text textHolder, Font textFont, Color textColor, float delay, AudioClip audio, float waitTime)
+        protected IEnumerator WriteText(string input, Text textHolder, Font textFont, Color textColor, float delay, AudioClip audio)
         {
             textHolder.color = textColor;
             textHolder.font = textFont;
@@ -22,7 +22,7 @@ namespace DialogueSystems
                 yield return new WaitForSeconds(delay);
             }
 
-            yield return new WaitForSeconds(waitTime);
+            yield return new WaitUntil(() => Input.GetMouseButton(0));
             finishedLine = true;
         }
     }

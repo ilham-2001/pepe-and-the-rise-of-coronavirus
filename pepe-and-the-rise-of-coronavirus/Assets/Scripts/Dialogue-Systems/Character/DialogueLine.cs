@@ -15,7 +15,6 @@ namespace DialogueSystems
 
         [Header("Time Parameter")]
         [SerializeField] private float delay;
-        [SerializeField] private float waitTime;
 
         [Header("Audio Parameter")]
         [SerializeField] private AudioClip audioSource;
@@ -36,7 +35,7 @@ namespace DialogueSystems
 
         private void Start()
         {
-            StartCoroutine(WriteText(input, textHolder, textFont, textColor, delay, audioSource, waitTime));
+            StartCoroutine(WriteText(input, textHolder, textFont, textColor, delay, audioSource));
         }
     }
 

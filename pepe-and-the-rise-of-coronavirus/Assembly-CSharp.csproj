@@ -36,13 +36,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Scripts/Dialogue-Systems/Character/DialogueBaseClass.cs" />
-     <Compile Include="Assets/Scripts/Core/SoundManager.cs" />
-     <Compile Include="Assets/Scripts/Dialogue-Systems/Character/DialogueLine.cs" />
      <Compile Include="Assets/Scripts/Dialogue-Systems/Character/DialogueHolder.cs" />
      <Compile Include="Assets/Scripts/Dialogue-Systems/Narator/NaratorBaseDialogue.cs" />
-     <Compile Include="Assets/Scripts/Dialogue-Systems/Narator/NaratorDialogueLine.cs" />
+     <Compile Include="Assets/Scripts/Dialogue-Systems/Character/DialogueBaseClass.cs" />
+     <Compile Include="Assets/Scripts/Core/SoundManager.cs" />
      <Compile Include="Assets/Scripts/Dialogue-Systems/Narator/NaratorDialogueHolder.cs" />
+     <Compile Include="Assets/Scripts/Dialogue-Systems/Character/DialogueLine.cs" />
+     <Compile Include="Assets/Scripts/Dialogue-Systems/Narator/NaratorDialogueLine.cs" />
+     <None Include="Assets/Scripts/Dialogue-Systems/Character/legacy_code.txt" />
     <Reference Include="UnityEngine">
         <HintPath>/home/irizqyakbr/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
