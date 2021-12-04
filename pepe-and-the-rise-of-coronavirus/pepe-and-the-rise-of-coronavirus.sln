@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.UI", "UnityEngine.UI.csproj", "{52860222-d4b6-3b46-b775-248651649f58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{d948d520-9359-b844-7260-a9abdc3af051}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEditor.UI", "UnityEditor.UI.csproj", "{b5ad6b91-56c5-9483-c977-6825f43b2230}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Sprite.Editor", "Unity.2D.Sprite.Editor.csproj", "{4d888f07-d351-552f-1e0a-a5203489cc5d}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Tilemap.Editor", "Unity.2D.Tilemap.Editor.csproj", "{1d15cf61-f41c-845e-fabc-b4f24157eb19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52860222-d4b6-3b46-b775-248651649f58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52860222-d4b6-3b46-b775-248651649f58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{d948d520-9359-b844-7260-a9abdc3af051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{d948d520-9359-b844-7260-a9abdc3af051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b5ad6b91-56c5-9483-c977-6825f43b2230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b5ad6b91-56c5-9483-c977-6825f43b2230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4d888f07-d351-552f-1e0a-a5203489cc5d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4d888f07-d351-552f-1e0a-a5203489cc5d}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1d15cf61-f41c-845e-fabc-b4f24157eb19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1d15cf61-f41c-845e-fabc-b4f24157eb19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
