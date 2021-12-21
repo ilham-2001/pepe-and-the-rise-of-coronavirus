@@ -20,6 +20,12 @@ TextureImporter:
   - first:
       213: 7114749600334973975
     second: Pepe_5
+  - first:
+      213: -2255812824141337240
+    second: Pepe_6
+  - first:
+      213: -7057994080077676554
+    second: Pepe_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -135,7 +141,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1150
         y: 2335
-        width: 483
+        width: 484
         height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -154,10 +160,10 @@ TextureImporter:
       name: Pepe_2
       rect:
         serializedVersion: 2
-        x: 127
-        y: 1310
-        width: 547
-        height: 260
+        x: 2270
+        y: 2335
+        width: 356
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,9 +181,9 @@ TextureImporter:
       name: Pepe_3
       rect:
         serializedVersion: 2
-        x: 1246
+        x: 223
         y: 1310
-        width: 452
+        width: 355
         height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -196,10 +202,10 @@ TextureImporter:
       name: Pepe_4
       rect:
         serializedVersion: 2
-        x: 127
-        y: 286
-        width: 483
-        height: 259
+        x: 1150
+        y: 1310
+        width: 547
+        height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,10 +223,10 @@ TextureImporter:
       name: Pepe_5
       rect:
         serializedVersion: 2
-        x: 1150
-        y: 286
-        width: 548
-        height: 259
+        x: 2270
+        y: 1310
+        width: 452
+        height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,6 +236,48 @@ TextureImporter:
       bones: []
       spriteID: 71c81d1e01bacb260800000000000000
       internalID: 7114749600334973975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pepe_6
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 286
+        width: 483
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86de841303eb1b0e0800000000000000
+      internalID: -2255812824141337240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pepe_7
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 286
+        width: 547
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fff82e67c7fc0e90800000000000000
+      internalID: -7057994080077676554
       vertices: []
       indices: 
       edges: []
