@@ -84,11 +84,11 @@ public class EnemyAttack : MonoBehaviour
     private bool PlayerInSight()
     {
         RaycastHit2D hit =
-            Physics2D.BoxCast(enemyCol.bounds.center + transform.right * range * (transform.localScale.x / 4) * colliderDistance,
-            new Vector3(enemyCol.bounds.size.x * range, enemyCol.bounds.size.y, enemyCol.bounds.size.z),
-            0, Vector2.left, 0, playerLayer);
+    Physics2D.BoxCast(enemyCol.bounds.center + transform.right * range * (transform.localScale.x / 4) * colliderDistance,
+    new Vector3(enemyCol.bounds.size.x * range, enemyCol.bounds.size.y, enemyCol.bounds.size.z),
+    0, Vector2.left, 0, playerLayer);
 
-        // print(hit.collider);
+        print(hit.collider);
 
         return hit.collider != null;
     }

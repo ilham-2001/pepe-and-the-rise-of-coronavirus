@@ -18,14 +18,14 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float _damage)
     {
-        // print("Take damage");
+        anim.SetTrigger("attacked");
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, initialHealth);
 
 
         if (currentHealth <= 0)
         {
-            anim.SetTrigger("attacked");
             GetComponent<PepeMovement>().enabled = false;
+            GameObject.Find("Pepe").SetActive(false);
         }
 
     }

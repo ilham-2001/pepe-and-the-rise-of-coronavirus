@@ -4,44 +4,46 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    [Header("Projectile Parameters")]
     [SerializeField] private float speed;
+    [SerializeField] float projectileDuration;
+
+    // private Animator anim;
     private bool hit;
     private float direction;
     private BoxCollider2D boxCol;
     private float lifeTime;
-    [SerializeField] float projectileDuration;
 
     void Awake()
     {
         boxCol = GetComponent<BoxCollider2D>();
+        // anim = GetComponent<Animator>();
     }
 
     void Update()
     {
         if (hit)
         {
-            return;
+            return; // return nothing mean to not execute the rest of the code
         }
 
-        // print("dir:" + direction);
         float movementSpeed = speed * Time.deltaTime * direction;
-        transform.Translate(0, movementSpeed, 0);
-
+        transform.Translate(movementSpeed * direction, 0, 0); // bug di sini
         lifeTime += Time.deltaTime;
-        print("lifetime:" + lifeTime);
-        print("duration:" + projectileDuration);
+
 
         if (lifeTime > projectileDuration)
         {
-            print("msk if");
             gameObject.SetActive(false);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+        print("hitted something");
         hit = true;
         boxCol.enabled = false;
+        Deactivate();
 
         if (col.tag == "Enemy")
         {
@@ -52,26 +54,26 @@ public class Projectile : MonoBehaviour
     public void SetDirection(float _direction)
     {
         lifeTime = 0;
-        print("scale pepe:" + _direction);
         direction = _direction;
         gameObject.SetActive(true);
         boxCol.enabled = true;
         hit = false;
 
         float localScaleX = transform.localScale.x;
-        print("scale arrow:" + localScaleX);
 
         if (Mathf.Sign(localScaleX) != _direction)
         {
             localScaleX = -localScaleX;
-            print("local arrow now:" + localScaleX);
         }
 
         transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
     }
 
-    private void Deactivate()
+    public void Deactivate()
     {
         gameObject.SetActive(false);
     }
 }
+
+// NOTE:
+// Animator ada semacam konflik

@@ -4,22 +4,25 @@ using UnityEngine;
 
 public class PepeMovement : MonoBehaviour
 {
-    [Header("Player Component")]
+    // Player Component
     private Rigidbody2D body;
     private Animator anim;
+    private PlayerHealth plyHealth;
     [Header("Players Movement Parameter")]
     [SerializeField] private float movementSpeed = 10f;
-    private float moveX;
-    private bool jumping;
-
     [SerializeField] private float scaleX;
     [SerializeField] private float scaleY;
+    [SerializeField] private float gravity;
+
+    private float moveX;
+    private bool jumping;
 
 
     void Awake()
     {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        plyHealth = GetComponent<PlayerHealth>();
     }
 
     void Update()
@@ -52,6 +55,14 @@ public class PepeMovement : MonoBehaviour
         setAnimation();
     }
 
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.tag == "Obstacle")
+        {
+            plyHealth.TakeDamage(1);
+        }
+    }
+
     private void setAnimation()
     {
         anim.SetBool("isWalk", moveX != 0);
@@ -59,6 +70,7 @@ public class PepeMovement : MonoBehaviour
 
     private void Jump()
     {
+        body.gravityScale = gravity;
         body.velocity = new Vector2(body.velocity.x, movementSpeed);
         jumping = true;
         anim.SetTrigger("jumping");
@@ -69,6 +81,7 @@ public class PepeMovement : MonoBehaviour
         // Debug.Log("Hit");
         if (col.gameObject.tag == "Ground")
         {
+            body.gravityScale = 1;
             jumping = false;
         }
     }

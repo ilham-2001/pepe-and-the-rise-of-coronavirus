@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c66ae1d6d7d546c699bab61fd622a47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
   resetTime: 3.5
 --- !u!212 &207567605
 SpriteRenderer:
@@ -1055,7 +1055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c66ae1d6d7d546c699bab61fd622a47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
   resetTime: 3.5
 --- !u!212 &934893078
 SpriteRenderer:
@@ -1404,7 +1404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c66ae1d6d7d546c699bab61fd622a47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
   resetTime: 3.5
 --- !u!212 &994077936
 SpriteRenderer:
@@ -1481,7 +1481,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000876429}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.33, y: -3.03, z: -0.68037355}
+  m_LocalPosition: {x: 4.39, y: -3.03, z: -0.68037355}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1497081247}
@@ -1581,7 +1581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c66ae1d6d7d546c699bab61fd622a47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
   resetTime: 3.5
 --- !u!212 &1109696926
 SpriteRenderer:
@@ -1649,9 +1649,10 @@ GameObject:
   - component: {fileID: 1193595493}
   - component: {fileID: 1193595498}
   - component: {fileID: 1193595499}
+  - component: {fileID: 1193595500}
   m_Layer: 6
   m_Name: Red Virus
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1694,7 +1695,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.72, y: 6.08}
+    oldSize: {x: 7.11, y: 8.04}
     newSize: {x: 6.72, y: 6.08}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1762,7 +1763,7 @@ SpriteRenderer:
   m_SortingLayerID: 1584564777
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3607603922811814951, guid: 7d2e99a5ceb10e7a38301bfda5a757b0, type: 3}
+  m_Sprite: {fileID: 6949942136810822376, guid: cef3f5d8c19be6bffabda25552dba89c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1781,7 +1782,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193595492}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.99, y: -3.47, z: -60.61946}
+  m_LocalPosition: {x: -2.97, y: -3.29, z: -60.61946}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children:
   - {fileID: 1749756417}
@@ -1802,9 +1803,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCooldown: 1.5
-  range: 2.35
+  range: 3.4
   damage: 1
-  colliderDistance: 15.78
+  colliderDistance: 12.91
   enemyCol: {fileID: 1193595494}
   playerLayer:
     serializedVersion: 2
@@ -1828,6 +1829,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec0cf2038c44b6bdd90aac0c486584ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1193595500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193595492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a7416fbe0212c1b9ccddfccb1f7c37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initalHealth: 10
 --- !u!1 &1285666133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,7 +2000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c66ae1d6d7d546c699bab61fd622a47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
   resetTime: 3.5
 --- !u!212 &1324925456
 SpriteRenderer:

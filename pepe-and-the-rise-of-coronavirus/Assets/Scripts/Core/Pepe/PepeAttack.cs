@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PepeAttack : MonoBehaviour
 {
+    [Header("Attack Parameter")]
     [SerializeField] private float attackCooldown;
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject[] projectiles;
-    private float cooldownTimer = 10f;
+    private float cooldownTimer = Mathf.Infinity;
 
     private PepeMovement plyMove;
     void Start()

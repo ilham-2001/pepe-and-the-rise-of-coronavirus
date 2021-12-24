@@ -5,6 +5,8 @@ using UnityEngine;
 public class VirusHealth : MonoBehaviour
 {
     [SerializeField] private int initalHealth;
+    [SerializeField] private string name;
+
     private int currentHealth;
 
     private void Awake()
@@ -34,7 +36,7 @@ public class VirusHealth : MonoBehaviour
         print("anim ilang");
         GetComponent<SpriteRenderer>().enabled = false;
         this.enabled = false;
-        GameObject.Find("Enemy Patrol").SetActive(false);
+        GameObject.Find(name).SetActive(false);
         print("patrol ilang");
 
     }
