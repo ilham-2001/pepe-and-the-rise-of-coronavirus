@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace DialogueSystems
 {
@@ -19,9 +20,18 @@ namespace DialogueSystems
                 transform.GetChild(i).gameObject.SetActive(true);
                 yield return new WaitUntil(() => transform.GetChild(i).GetComponent<DialogueLine>().finishedLine);
             }
+            // gameObject.SetActive(false); 
+            StartCoroutine(SceneTransition());
 
-            gameObject.SetActive(false);
         }
+
+
+        private IEnumerator SceneTransition()
+        {
+            yield return new WaitForSeconds(2);
+            SceneManager.LoadScene("Intro Stage 1");
+        }
+
 
         private void Deativate()
         {
@@ -29,6 +39,7 @@ namespace DialogueSystems
             {
                 transform.GetChild(i).gameObject.SetActive(false);
             }
+
         }
     }
 

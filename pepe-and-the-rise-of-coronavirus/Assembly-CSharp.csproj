@@ -57,6 +57,7 @@
      <Compile Include="Assets/Scripts/Core/Pepe/Projectile.cs" />
      <Compile Include="Assets/Scripts/Core/Pepe/HealthBar.cs" />
      <Compile Include="Assets/Scripts/Core/Game Systems/GateWayScript.cs" />
+     <Compile Include="Assets/Scripts/Core/Game Systems/SceneTransition.cs" />
      <None Include="Assets/Scripts/Dialogue-Systems/Character/legacy_code.txt" />
     <Reference Include="UnityEngine">
         <HintPath>/home/irizqyakbr/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
