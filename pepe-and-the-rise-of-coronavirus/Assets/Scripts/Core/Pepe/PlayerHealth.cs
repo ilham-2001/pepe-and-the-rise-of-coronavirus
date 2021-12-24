@@ -25,7 +25,7 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             GetComponent<PepeMovement>().enabled = false;
-            GameObject.Find("Pepe").SetActive(false);
+            GameObject.Find("Pepe Ver 2.0").SetActive(false);
         }
 
     }

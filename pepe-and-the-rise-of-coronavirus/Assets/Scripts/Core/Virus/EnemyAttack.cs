@@ -76,6 +76,7 @@ public class EnemyAttack : MonoBehaviour
     private void RangedAttack()
     {
         cooldownTimer = 0;
+        print(firePoint.position);
         projectiles[FindArrows()].transform.position = firePoint.position;
         projectiles[FindArrows()].GetComponent<EnemyProjectile>().ActivateProjectile();
     }
