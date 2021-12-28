@@ -3903,7 +3903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9247773c5cfd3a89c85cf4139815b5af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  namaScene: Stage 2
+  namaScene: Intro Stage 2
 --- !u!61 &1234228024
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6257,6 +6257,10 @@ PrefabInstance:
     - target: {fileID: 421606474661943655, guid: 2f7b73e0ef4114b4d91eb84c66e217bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 421606474661943676, guid: 2f7b73e0ef4114b4d91eb84c66e217bf, type: 3}
+      propertyPath: attackCooldown
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f7b73e0ef4114b4d91eb84c66e217bf, type: 3}
